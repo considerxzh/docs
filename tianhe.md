@@ -23,7 +23,7 @@ IPSec secret “共享密钥”
 Xauth username nsfc2015_304
 Xauth password “密码”
 ```
-
+(加入后可直接使用sudo vpnc-connect 进行连接vpnc)
 3. 创建脚本`tianhe.sh`,内容为
 ```
 #!/bin/bash
@@ -35,7 +35,7 @@ sudo vpnc
 ./tianhe.sh
 ``` 
 即可登录
-
+(使用完后输入命令sudo vpnc-disconnect断开连接，不然无法上网)
 ### 超算中环境配置
 - 天河使用`module`来管理环境变量，但由于配置项过多，所以可以写成脚本方便配置，目前默认配置为`~/module_add.sh`
 - MXNet的module配置
